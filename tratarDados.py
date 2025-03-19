@@ -13,7 +13,6 @@ print("Total de colunas no arquivo:", len(df.columns))
 # Remove a coluna na posição 2 (índice 2)
 df = df.drop(df.columns[1], axis=1)
 
-
 ## Movendo itens para o final da tabela do excel 
 coluna_ID = df.pop(df.columns[0])  # Remove a coluna 1 do DataFrame e armazena
 df[df.columns[-1] + 'ID'] = coluna_ID  # Adiciona a coluna no final com um nome temporário
